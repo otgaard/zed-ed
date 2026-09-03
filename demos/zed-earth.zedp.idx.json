@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "wrap": 2,
+  "bundleHash": "f9407bd03c25365e",
+  "text": {
+    "offset": 36,
+    "length": 190966,
+    "hash": "2e720df23c371a6a"
+  },
+  "assets": [
+    {
+      "path": "textures/msdf-default-atlas.png",
+      "offset": 191063,
+      "length": 532615,
+      "hash": "dc35b520d6102a13",
+      "mime": "image/png"
+    },
+    {
+      "path": "snapshots/snap-1.webp",
+      "offset": 723729,
+      "length": 46304,
+      "hash": "a1392c06ad9bfb2c",
+      "mime": "image/webp"
+    }
+  ]
+}

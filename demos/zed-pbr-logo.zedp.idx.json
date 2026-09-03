@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "wrap": 2,
+  "bundleHash": "019ef374a229acb4",
+  "text": {
+    "offset": 36,
+    "length": 7885,
+    "hash": "80acd9a00cf9c4a5"
+  },
+  "assets": [
+    {
+      "path": "geometry-assets/pbr-extruded-z/positions.bin",
+      "offset": 7995,
+      "length": 48240,
+      "hash": "ede3424df88f47e3"
+    },
+    {
+      "path": "geometry-assets/pbr-extruded-z/indices.bin",
+      "offset": 56307,
+      "length": 96432,
+      "hash": "7e3ab0f79694a291"
+    },
+    {
+      "path": "geometry-assets/pbr-extruded-z/normals.bin",
+      "offset": 152811,
+      "length": 48240,
+      "hash": "1d64c92be86ead38"
+    },
+    {
+      "path": "geometry-assets/pbr-extruded-z/uvs.bin",
+      "offset": 201119,
+      "length": 32160,
+      "hash": "c1225b98411e45f1"
+    },
+    {
+      "path": "geometry-assets/pbr-extruded-z/tangents.bin",
+      "offset": 233352,
+      "length": 64320,
+      "hash": "a44b0779f9623f5e"
+    },
+    {
+      "path": "textures/__envmap_n_7b9pjs_irradiance.zcm",
+      "offset": 297743,
+      "length": 42885,
+      "hash": "413fbea38b8e7892",
+      "mime": "application/x-zed-zcm"
+    },
+    {
+      "path": "textures/__envmap_n_7b9pjs_prefiltered.zcm",
+      "offset": 340700,
+      "length": 831632,
+      "hash": "ae762f83bbc91b50",
+      "mime": "application/x-zed-zcm"
+    },
+    {
+      "path": "textures/__envmap_n_7b9pjs_brdf.png",
+      "offset": 1172397,
+      "length": 113478,
+      "hash": "5422ef673c889a61",
+      "mime": "image/png"
+    },
+    {
+      "path": "textures/albedo.png",
+      "offset": 1285924,
+      "length": 3597006,
+      "hash": "4efee4f9b59edf55",
+      "mime": "image/png"
+    },
+    {
+      "path": "textures/orm.png",
+      "offset": 4882976,
+      "length": 1724375,
+      "hash": "98edf251ab34a95e",
+      "mime": "image/png"
+    },
+    {
+      "path": "textures/normal.png",
+      "offset": 6607400,
+      "length": 2390041,
+      "hash": "2b5dd179d5b18d45",
+      "mime": "image/png"
+    },
+    {
+      "path": "textures/venice_sunset_2k.hdr",
+      "offset": 8997500,
+      "length": 5723224,
+      "hash": "cbfac020ee17ab36"
+    },
+    {
+      "path": "snapshots/snap-1.webp",
+      "offset": 14720775,
+      "length": 19210,
+      "hash": "e148fc867ca05ce8",
+      "mime": "image/webp"
+    }
+  ]
+}

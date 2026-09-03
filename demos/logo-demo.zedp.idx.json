@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "wrap": 2,
+  "bundleHash": "4a2027c8a9de8289",
+  "text": {
+    "offset": 36,
+    "length": 7753,
+    "hash": "1b5ef1ce068fa455"
+  },
+  "assets": [
+    {
+      "path": "geometry-assets/logo/positions.bin",
+      "offset": 7853,
+      "length": 164016,
+      "hash": "7ae4c623d98c2af6"
+    },
+    {
+      "path": "snapshots/snap-2.webp",
+      "offset": 171920,
+      "length": 117538,
+      "hash": "9b378f4eea3b1e56",
+      "mime": "image/webp"
+    }
+  ]
+}

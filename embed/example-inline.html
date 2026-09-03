@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zed Player — Inline-Shader Smoke Test</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        max-width: 960px; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+      }
+      section { margin-bottom: 2rem; }
+      h2 { margin: 0 0 0.5rem; font-size: 1.15rem; }
+      zed-player {
+        width: 100%; display: block; background: #000;
+        border-radius: 6px; overflow: hidden;
+      }
+      .status { font-size: 12px; color: #888; margin-top: 0.5rem; }
+    </style>
+    <script type="module" src="./zed-player.js"></script>
+  </head>
+  <body>
+    <h1>Inline-shader smoke test</h1>
+
+    <section>
+      <h2>A — Run-only gradient</h2>
+      <zed-player id="player-a" style="aspect-ratio:16/9">
+        <script type="x-shader/x-fragment">
+void renderImage(out vec4 fragColour, vec2 fragCoord) {
+  vec2 uv = fragCoord / screen.xy;
+  fragColour = vec4(uv, 0.5 + 0.5 * sin(time), 1.0);
+}
+        </script>
+      </zed-player>
+      <div class="status" data-status>idle…</div>
+    </section>
+
+    <section>
+      <h2>B — Disc with `radius` uniform</h2>
+      <zed-player id="player-b" view="split" mode="controls" style="aspect-ratio:16/9">
+        <script type="x-shader/x-fragment">
+#include &lt;basic&gt;
+uniform float radius; // {"value": 0.5, "min": 0.05, "max": 1.0, "step": 0.01}
+
+void renderImage(out vec4 fragColour, vec2 fragCoord) {
+  vec2 uv = (fragCoord / screen.xy) * 2.0 - 1.0;
+  uv.x *= AR;
+  float d = disc2D(uv, vec2(0.0), radius);
+  fragColour = vec4(vec3(smoothstep(0.0, 0.01, -d)), 1.0);
+}
+        </script>
+      </zed-player>
+      <div class="status" data-status>idle…</div>
+    </section>
+
+    <script>
+      document.querySelectorAll('zed-player').forEach((p) => {
+        const statusEl = p.parentElement.querySelector('[data-status]');
+        const write = (label, detail) => {
+          const ts = new Date().toLocaleTimeString();
+          let body = '';
+          try { body = detail ? JSON.stringify(detail) : ''; } catch (e) { body = String(detail); }
+          statusEl.textContent = `[${ts}] ${label} ${body}`;
+        };
+        p.addEventListener('zed-load', (e) => write('zed-load', e.detail));
+        p.addEventListener('zed-compile', (e) => write(
+          e.detail.ok ? 'zed-compile ok' : 'zed-compile fail',
+          e.detail.ok ? { schemas: Object.keys(e.detail.diagnostics ?? {}) } : { errors: e.detail.diagnostics?.length }
+        ));
+        p.addEventListener('zed-error', (e) => write('zed-error', e.detail));
+      });
+    </script>
+  </body>
+</html>

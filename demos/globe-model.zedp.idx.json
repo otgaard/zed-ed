@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "wrap": 2,
+  "bundleHash": "a1c7e86dae8527e9",
+  "text": {
+    "offset": 36,
+    "length": 12398,
+    "hash": "5b138a098e8bcca0"
+  },
+  "assets": [
+    {
+      "path": "textures/__viz3_landsdf",
+      "offset": 12487,
+      "length": 819386,
+      "hash": "ed3d9a6834b6fcd0"
+    },
+    {
+      "path": "snapshots/snap-1.webp",
+      "offset": 831924,
+      "length": 69112,
+      "hash": "6db0ec1a23da6528",
+      "mime": "image/webp"
+    }
+  ]
+}

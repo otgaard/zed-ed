@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "wrap": 2,
+  "bundleHash": "03b0fdcf56d2c7a3",
+  "text": {
+    "offset": 36,
+    "length": 6255,
+    "hash": "5aa19f2516c02349"
+  },
+  "assets": [
+    {
+      "path": "gltf-models/CarConcept.gltf/model.bin",
+      "offset": 6358,
+      "length": 216508,
+      "hash": "8bdd76afb00f6b43"
+    },
+    {
+      "path": "gltf-models/CarConcept.gltf/externals/CarConcept.data.bin",
+      "offset": 222953,
+      "length": 1944620,
+      "hash": "157d1a7ba13b1aa5"
+    },
+    {
+      "path": "gltf-models/CarConcept.gltf/externals/Mechanical_N.ktx2",
+      "offset": 2167658,
+      "length": 226345,
+      "hash": "341db23ec5169872",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/CarConcept.gltf/externals/Mechanical_ORM.ktx2",
+      "offset": 2394090,
+      "length": 153752,
+      "hash": "e38d981fe93ea6d0",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/CarConcept.gltf/externals/Occlusion.ktx2",
+      "offset": 2547924,
+      "length": 545443,
+      "hash": "905008376f6701af",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/CarConcept.gltf/externals/Khronos_C.ktx2",
+      "offset": 3093449,
+      "length": 7081,
+      "hash": "627acc26f726e753",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/CarConcept.gltf/externals/Hex_N.ktx2",
+      "offset": 3100608,
+      "length": 2858,
+      "hash": "5b1949805e65f218",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/CarConcept.gltf/externals/Rib_N.ktx2",
+      "offset": 3103544,
+      "length": 622,
+      "hash": "7bbd1d7776a087b4",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/CarConcept.gltf/externals/Dash_E.ktx2",
+      "offset": 3104245,
+      "length": 15812,
+      "hash": "f9b0811444153459",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/CarConcept.gltf/externals/Powdercoat_N.ktx2",
+      "offset": 3120142,
+      "length": 21698,
+      "hash": "518dce1ade4f1d35",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/CarConcept.gltf/externals/Dot_C.ktx2",
+      "offset": 3141918,
+      "length": 1374,
+      "hash": "08968e9d7d9855ae",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/CarConcept.gltf/externals/Dot_N.ktx2",
+      "offset": 3143370,
+      "length": 7011,
+      "hash": "4a10cfb6134015d6",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/CarConcept.gltf/externals/Tireside_C.ktx2",
+      "offset": 3150464,
+      "length": 7607,
+      "hash": "d90617659d164fd1",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/CarConcept.gltf/externals/Tireside_N.ktx2",
+      "offset": 3158154,
+      "length": 316900,
+      "hash": "a0379569aef88f88",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/CarConcept.gltf/externals/Tiretread_N.ktx2",
+      "offset": 3475138,
+      "length": 53888,
+      "hash": "4abedc34a3ecde5d",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/CarConcept.gltf/externals/Thickness.ktx2",
+      "offset": 3529108,
+      "length": 51521,
+      "hash": "6cf5fefa01ce9817",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "textures/__envmap_n_6mqzio_brdf.png",
+      "offset": 3580694,
+      "length": 113496,
+      "hash": "304e01677ef48b15",
+      "mime": "image/png"
+    },
+    {
+      "path": "textures/__envmap_n_6mqzio_irradiance.zcm",
+      "offset": 3694261,
+      "length": 42937,
+      "hash": "40e215fddbb62d79",
+      "mime": "application/x-zed-zcm"
+    },
+    {
+      "path": "textures/__envmap_n_6mqzio_prefiltered.zcm",
+      "offset": 3737270,
+      "length": 825273,
+      "hash": "1c51ecb41b83554d",
+      "mime": "application/x-zed-zcm"
+    },
+    {
+      "path": "textures/venice_sunset_2k.hdr",
+      "offset": 4562602,
+      "length": 5723224,
+      "hash": "cbfac020ee17ab36"
+    },
+    {
+      "path": "snapshots/snap-1.webp",
+      "offset": 10285877,
+      "length": 38912,
+      "hash": "46c5e065405d4f62",
+      "mime": "image/webp"
+    }
+  ]
+}

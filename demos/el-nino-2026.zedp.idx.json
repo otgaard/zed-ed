@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "wrap": 2,
+  "bundleHash": "cf4a2079879aa3a1",
+  "text": {
+    "offset": 36,
+    "length": 47529,
+    "hash": "f46b380a73c78b8e"
+  },
+  "assets": [
+    {
+      "path": "data/n_3k2anl__coast",
+      "offset": 47615,
+      "length": 787216,
+      "hash": "1ed2fbccea47ae06"
+    },
+    {
+      "path": "data/n_3igl0b__border",
+      "offset": 834882,
+      "length": 787216,
+      "hash": "857a91bbaaff61be"
+    },
+    {
+      "path": "data/n_2tehoi__outline",
+      "offset": 1622150,
+      "length": 787216,
+      "hash": "758fe63ddac209b4"
+    },
+    {
+      "path": "textures/elnino-elevation",
+      "offset": 2409421,
+      "length": 413118,
+      "hash": "078ce6b67ad45594"
+    },
+    {
+      "path": "textures/elnino-mask",
+      "offset": 2822589,
+      "length": 149078,
+      "hash": "b7f75c08865a29a3"
+    },
+    {
+      "path": "textures/elnino-country-id",
+      "offset": 2971723,
+      "length": 203096,
+      "hash": "3e20fe7c234c5e11"
+    },
+    {
+      "path": "videos/el-nino-anom.webm",
+      "offset": 3174873,
+      "length": 13303176,
+      "hash": "57712ac3cea4c0a1",
+      "mime": "video/webm"
+    },
+    {
+      "path": "snapshots/snap-1.webp",
+      "offset": 16478100,
+      "length": 52114,
+      "hash": "644be77ce5139ce7",
+      "mime": "image/webp"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+function e(e,t){let n=e.map(e=>({x:0,y:0,w:e.w,h:e.h})),r=e.map((e,t)=>t).sort((t,n)=>e[n].h-e[t].h),i=0,a=0,o=0,s=0;for(let c of r){let r=e[c];i>0&&i+r.w>t&&(a+=o,i=0,o=0),n[c].x=i,n[c].y=a,i+=r.w,r.h>o&&(o=r.h),i>s&&(s=i)}return{atlasW:Math.max(1,s),atlasH:Math.max(1,a+o),rects:n}}export{e as t};

@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "demos": [
+    {
+      "slug": "audio-demo",
+      "title": "audio-demo",
+      "description": "Example audio-responsive demo with spectrogram & 3D camera + sphere",
+      "file": "audio-demo.zedp",
+      "thumb": "audio-demo.jpg",
+      "hash": "e118dc937160de07"
+    },
+    {
+      "slug": "clearcoat-test",
+      "title": "clearcoat-test",
+      "description": "A clearcoat test",
+      "file": "clearcoat-test.zedp",
+      "thumb": "clearcoat-test.jpg",
+      "hash": "03b0fdcf56d2c7a3"
+    },
+    {
+      "slug": "damaged-helmet",
+      "title": "damaged-helmet",
+      "description": "Test glTF 2.0 (glb) scene with environmental lighting",
+      "file": "damaged-helmet.zedp",
+      "thumb": "damaged-helmet.jpg",
+      "hash": "ef15404bc521bda6"
+    },
+    {
+      "slug": "el-nino-2026",
+      "title": "el-nino-2026",
+      "description": "A visualisation of the NOAA Sea surface temperature data mapping the 2026 El Niño event [NOAA OISST v2.1 via NCEI ERDDAP]",
+      "file": "el-nino-2026.zedp",
+      "thumb": "el-nino-2026.jpg",
+      "hash": "cf4a2079879aa3a1"
+    },
+    {
+      "slug": "flight-helmet",
+      "title": "flight-helmet",
+      "description": "Test of KTX2/BasisU loader",
+      "file": "flight-helmet.zedp",
+      "thumb": "flight-helmet.jpg",
+      "hash": "54f52fc5c5cb6974"
+    },
+    {
+      "slug": "glass-demo",
+      "title": "glass-demo",
+      "description": "An enhanced, prismatic glass demo, extruded Roboto font",
+      "file": "glass-demo.zedp",
+      "thumb": "glass-demo.jpg",
+      "hash": "206dab45208a21f6"
+    },
+    {
+      "slug": "globe-model",
+      "title": "globe-model",
+      "description": "A SDF model of the globe modeling a satellite constellation",
+      "file": "globe-model.zedp",
+      "thumb": "globe-model.jpg",
+      "hash": "a1c7e86dae8527e9"
+    },
+    {
+      "slug": "logo-demo",
+      "title": "logo-demo",
+      "description": "An interactive, multi-pass, Poisson-disc sampled point cloud with periodic 3D Perlin noise, a ping-ponged displacement texture, and a shadow projection and cursor animation.",
+      "file": "logo-demo.zedp",
+      "thumb": "logo-demo.jpg",
+      "hash": "4a2027c8a9de8289"
+    },
+    {
+      "slug": "transmission-test",
+      "title": "transmission-test",
+      "file": "transmission-test.zedp",
+      "thumb": "transmission-test.jpg",
+      "hash": "a6392eaf05421d00"
+    },
+    {
+      "slug": "zed-earth",
+      "title": "Zed Earth",
+      "description": "A subdivided icosahedron using a quadtree to max 220m per pixel resolution with realistic and political visualisations.",
+      "file": "zed-earth.zedp",
+      "thumb": "zed-earth.jpg",
+      "hash": "f9407bd03c25365e"
+    },
+    {
+      "slug": "zed-pbr-logo",
+      "title": "Zed PBR Logo",
+      "description": "A metallic/roughness rendering of the Zed logo using triplanar UV.",
+      "file": "zed-pbr-logo.zedp",
+      "thumb": "zed-pbr-logo.jpg",
+      "hash": "019ef374a229acb4"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png" />
+    <link rel="manifest" href="./icons/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="Zed — a dynamic, graph-based, multi-pass, 2D/3D shader editor"
+    />
+    <title>Zed — Shader Editor</title>
+    <script>
+      // Set host flag before any module imports so project.svelte.ts can
+      // read it during readStored() at module-evaluation time. The same flag
+      // is also set from src/main.ts as belt-and-braces.
+      window.__zedHost__ = 'editor';
+    </script>
+
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('zed-theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = stored === 'light' || stored === 'dark' ? stored : prefersDark ? 'dark' : 'light';
+          document.documentElement.dataset.theme = theme;
+        } catch (_) {
+          document.documentElement.dataset.theme = 'light';
+        }
+
+        try {
+          var sb = JSON.parse(localStorage.getItem('zed-sidebar') || 'null');
+          if (sb && sb.collapsed === true) {
+            document.documentElement.dataset.sidebarCollapsed = 'true';
+          }
+        } catch (_) {}
+
+        try {
+          var ly = JSON.parse(localStorage.getItem('zed-layout') || 'null');
+          if (ly && ly.bottomPanelOpen === true) {
+            document.documentElement.dataset.bottomOpen = 'true';
+          }
+        } catch (_) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/editor-C8T5PHWx.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-CSRv37U6.js">
+    <link rel="modulepreload" crossorigin href="./assets/preload-helper-BmHspSiq.js">
+    <link rel="modulepreload" crossorigin href="./assets/chunk-Dk7t3yRR.js">
+    <link rel="modulepreload" crossorigin href="./assets/zap-Qm2Ao6rl.js">
+    <link rel="modulepreload" crossorigin href="./assets/index-client-C_Fm-6OC.js">
+    <link rel="modulepreload" crossorigin href="./assets/browser-Cv28AiI4.js">
+    <link rel="modulepreload" crossorigin href="./assets/types-yOexZsrk.js">
+    <link rel="modulepreload" crossorigin href="./assets/flatten-Cz6f08EO.js">
+    <link rel="modulepreload" crossorigin href="./assets/bvhConfig-vzOajthA.js">
+    <link rel="modulepreload" crossorigin href="./assets/includeClosure-CBOfwEfO.js">
+    <link rel="modulepreload" crossorigin href="./assets/inputCache-CyQZ0raT.js">
+    <link rel="modulepreload" crossorigin href="./assets/types-Bsq5jG3y.js">
+    <link rel="modulepreload" crossorigin href="./assets/textureConfig-BQA1gTaZ.js">
+    <link rel="modulepreload" crossorigin href="./assets/project.svelte-DKj3yU6X.js">
+    <link rel="modulepreload" crossorigin href="./assets/cmTheme-BZLRp37w.js">
+    <link rel="modulepreload" crossorigin href="./assets/index-client-D-YfLIDw.js">
+    <link rel="modulepreload" crossorigin href="./assets/timeline.svelte-B3zaAE9v.js">
+    <link rel="modulepreload" crossorigin href="./assets/evaluate-C7a6CH5G.js">
+    <link rel="modulepreload" crossorigin href="./assets/shelfPack-BcDx8iAJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/glCapabilities-3EQXNaXC.js">
+    <link rel="modulepreload" crossorigin href="./assets/tabs.svelte-xZ7IZhBK.js">
+    <link rel="modulepreload" crossorigin href="./assets/editorTarget.svelte-qa7nxnZp.js">
+    <link rel="modulepreload" crossorigin href="./assets/projectTexture-ByP1bhS1.js">
+    <link rel="modulepreload" crossorigin href="./assets/sourceMap-B_VSzJ80.js">
+    <link rel="modulepreload" crossorigin href="./assets/environmentMapRuntime-384rYvH2.js">
+    <link rel="modulepreload" crossorigin href="./assets/raymarchGlsl-CZdfVUqY.js">
+    <link rel="modulepreload" crossorigin href="./assets/engineIncludes-81E5OabJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/engineScriptLibs-BeknvnuY.js">
+    <link rel="modulepreload" crossorigin href="./assets/uri-CQSxncOd.js">
+    <link rel="modulepreload" crossorigin href="./assets/parse-D0v0cXlq.js">
+    <link rel="modulepreload" crossorigin href="./assets/basis-Ddk9iKY2.js">
+    <link rel="modulepreload" crossorigin href="./assets/tangents-D8cKuxvz.js">
+    <link rel="modulepreload" crossorigin href="./assets/engine.svelte-BsYK54Xd.js">
+    <link rel="modulepreload" crossorigin href="./assets/disclose-version-BR6gYpUt.js">
+    <link rel="modulepreload" crossorigin href="./assets/chunkReload-Cvt9Exh9.js">
+    <link rel="modulepreload" crossorigin href="./assets/glslExtension-CDHgez0l.js">
+    <link rel="modulepreload" crossorigin href="./assets/touchCapture-DNqi7EYg.js">
+    <link rel="modulepreload" crossorigin href="./assets/localFonts-Gh2NmF-D.js">
+    <link rel="stylesheet" crossorigin href="./assets/editor-C6R9vljK.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

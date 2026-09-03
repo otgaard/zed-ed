@@ -1,0 +1,1 @@
+var e=4294901760,t=65535,n=1.25,r={maxLeafTris:1,strategy:`sah`};export{r as i,t as n,n as r,e as t};
