@@ -78,7 +78,7 @@
       "description": "A subdivided icosahedron using a quadtree to max 220m per pixel resolution with realistic and political visualisations.",
       "file": "zed-earth.zedp",
       "thumb": "zed-earth.jpg",
-      "hash": "f9407bd03c25365e"
+      "hash": "40c131b869e9c2c7"
     },
     {
       "slug": "zed-pbr-logo",
