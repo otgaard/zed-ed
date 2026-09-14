@@ -1,25 +1,25 @@
 {
   "version": 1,
   "wrap": 2,
-  "bundleHash": "40c131b869e9c2c7",
+  "bundleHash": "13a450f43c5fbdf7",
   "text": {
     "offset": 36,
-    "length": 192996,
-    "hash": "1c0433d898dd4b01"
+    "length": 194559,
+    "hash": "6e8f732178237523"
   },
   "assets": [
     {
       "path": "textures/msdf-default-atlas.png",
-      "offset": 193093,
+      "offset": 194656,
       "length": 532615,
       "hash": "dc35b520d6102a13",
       "mime": "image/png"
     },
     {
       "path": "snapshots/snap-1.webp",
-      "offset": 725759,
-      "length": 45332,
-      "hash": "69296eb3acfdee00",
+      "offset": 727322,
+      "length": 46920,
+      "hash": "ba679ffc0906441a",
       "mime": "image/webp"
     }
   ]
