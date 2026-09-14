@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "wrap": 2,
+  "bundleHash": "206dab45208a21f6",
+  "text": {
+    "offset": 36,
+    "length": 6718,
+    "hash": "4a6348d41f350be5"
+  },
+  "assets": [
+    {
+      "path": "geometry-assets/glass/positions.bin",
+      "offset": 6819,
+      "length": 461856,
+      "hash": "d57bcd721ad58aaa"
+    },
+    {
+      "path": "geometry-assets/glass/indices.bin",
+      "offset": 468738,
+      "length": 923520,
+      "hash": "9317c7cdf203498d"
+    },
+    {
+      "path": "geometry-assets/glass/normals.bin",
+      "offset": 1392321,
+      "length": 461856,
+      "hash": "e9ddf64b2bff096a"
+    },
+    {
+      "path": "geometry-assets/glass/uvs.bin",
+      "offset": 1854236,
+      "length": 307904,
+      "hash": "024147e7ea4b686d"
+    },
+    {
+      "path": "geometry-assets/glass/tangents.bin",
+      "offset": 2162204,
+      "length": 615808,
+      "hash": "56d197615642f525"
+    },
+    {
+      "path": "fonts/roboto",
+      "offset": 2778054,
+      "length": 487768,
+      "hash": "0fe599aba604c33d"
+    },
+    {
+      "path": "snapshots/snap-1.webp",
+      "offset": 3265873,
+      "length": 42500,
+      "hash": "4ebba1776915ad06",
+      "mime": "image/webp"
+    }
+  ]
+}

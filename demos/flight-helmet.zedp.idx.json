@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "wrap": 2,
+  "bundleHash": "54f52fc5c5cb6974",
+  "text": {
+    "offset": 36,
+    "length": 5044,
+    "hash": "8af82a8e1d40f473"
+  },
+  "assets": [
+    {
+      "path": "gltf-models/FlightHelmet.gltf/model.bin",
+      "offset": 5149,
+      "length": 15722,
+      "hash": "9a1faf3da0be6628"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet.bin",
+      "offset": 20957,
+      "length": 3227148,
+      "hash": "3d93548c0fee7d36"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet_Materials_RubberWoodMat_Normal.ktx2",
+      "offset": 3248223,
+      "length": 3465889,
+      "hash": "93265835afe710f2",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet_Materials_RubberWoodMat_OcclusionRoughMetal.ktx2",
+      "offset": 6714243,
+      "length": 3499777,
+      "hash": "9395e76e759c4832",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet_Materials_RubberWoodMat_BaseColor.ktx2",
+      "offset": 10214141,
+      "length": 445129,
+      "hash": "6cf92bfcaedb00d4",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet_Materials_GlassPlasticMat_Normal.ktx2",
+      "offset": 10659390,
+      "length": 2755265,
+      "hash": "7cf766f3d7b0264f",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet_Materials_GlassPlasticMat_OcclusionRoughMetal.ktx2",
+      "offset": 13414788,
+      "length": 3820645,
+      "hash": "bead200bae826b5b",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet_Materials_GlassPlasticMat_BaseColor.ktx2",
+      "offset": 17235556,
+      "length": 310582,
+      "hash": "6e9e81234940a015",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet_Materials_MetalPartsMat_Normal.ktx2",
+      "offset": 17546256,
+      "length": 3552557,
+      "hash": "49cf9205d0f8bcf4",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet_Materials_MetalPartsMat_OcclusionRoughMetal.ktx2",
+      "offset": 21098944,
+      "length": 3100510,
+      "hash": "f7f1885c92fdc8f4",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet_Materials_MetalPartsMat_BaseColor.ktx2",
+      "offset": 24199575,
+      "length": 474058,
+      "hash": "6401f1173be33e94",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet_Materials_LeatherPartsMat_Normal.ktx2",
+      "offset": 24673753,
+      "length": 3809879,
+      "hash": "48184b0e81303786",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet_Materials_LeatherPartsMat_OcclusionRoughMetal.ktx2",
+      "offset": 28483765,
+      "length": 4156412,
+      "hash": "cf380bbe62ba2dce",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet_Materials_LeatherPartsMat_BaseColor.ktx2",
+      "offset": 32640300,
+      "length": 494615,
+      "hash": "2c5d59a1961e0479",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet_Materials_LensesMat_Normal.ktx2",
+      "offset": 33135029,
+      "length": 1670,
+      "hash": "ea7ad25b064e5258",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet_Materials_LensesMat_OcclusionRoughMetal.ktx2",
+      "offset": 33136826,
+      "length": 703074,
+      "hash": "557cf0706c90775f",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "gltf-models/FlightHelmet.gltf/externals/FlightHelmet_Materials_LensesMat_BaseColor.ktx2",
+      "offset": 33840017,
+      "length": 206414,
+      "hash": "f0bf199f430428dd",
+      "mime": "image/ktx2"
+    },
+    {
+      "path": "textures/venice_sunset_2k.hdr",
+      "offset": 34046490,
+      "length": 5723224,
+      "hash": "cbfac020ee17ab36"
+    },
+    {
+      "path": "textures/__envmap_n_g3ihy_irradiance.zcm",
+      "offset": 39769784,
+      "length": 42386,
+      "hash": "0ca3feb55518b45c",
+      "mime": "application/x-zed-zcm"
+    },
+    {
+      "path": "textures/__envmap_n_g3ihy_prefiltered.zcm",
+      "offset": 39812241,
+      "length": 3033707,
+      "hash": "b165e3e55609b793",
+      "mime": "application/x-zed-zcm"
+    },
+    {
+      "path": "textures/__envmap_n_g3ihy_brdf.png",
+      "offset": 42846012,
+      "length": 113496,
+      "hash": "304e01677ef48b15",
+      "mime": "image/png"
+    },
+    {
+      "path": "snapshots/snap-1.webp",
+      "offset": 42959559,
+      "length": 16252,
+      "hash": "2e9ad127bbda49e4",
+      "mime": "image/webp"
+    }
+  ]
+}

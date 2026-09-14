@@ -1,0 +1,1 @@
+function e(e,t,n,r){let i=r+1,a=Math.max(0,t-1),o=Math.min(r,t+1),s=o-a||1,c=e[n*i+a]?.p??[0,0],l=e[n*i+o]?.p??[0,0];return[(l[0]-c[0])/s,(l[1]-c[1])/s]}function t(e,t,n,r,i){let a=r+1,o=Math.max(0,n-1),s=Math.min(i,n+1),c=s-o||1,l=e[o*a+t]?.p??[0,0],u=e[s*a+t]?.p??[0,0];return[(u[0]-l[0])/c,(u[1]-l[1])/c]}export{t as n,e as t};

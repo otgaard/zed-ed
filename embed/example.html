@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zed Player — Embed Smoke Test</title>
+    <meta name="description" content="Static smoke test for the &lt;zed-player&gt; web component." />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #fafaf9; --fg: #1c1917; --muted: #57534e;
+        --border: #e7e5e4; --card: #fff; --code-bg: #f5f5f4;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0c0a09; --fg: #f5f5f4; --muted: #a8a29e;
+          --border: #292524; --card: #1c1917; --code-bg: #0a0a0a;
+        }
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+      body {
+        font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        max-width: 960px; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+      }
+      header h1 { margin: 0 0 0.25rem; font-size: 1.75rem; }
+      header p { margin: 0 0 2rem; color: var(--muted); }
+      section {
+        background: var(--card); border: 1px solid var(--border);
+        border-radius: 8px; padding: 1.25rem; margin-bottom: 1.5rem;
+      }
+      section h2 { margin: 0 0 0.5rem; font-size: 1.15rem; }
+      section p { margin: 0 0 1rem; color: var(--muted); }
+      zed-player {
+        width: 100%; display: block; background: #000;
+        border-radius: 6px; overflow: hidden;
+      }
+      .hero-frame, .full-frame { aspect-ratio: 16 / 9; }
+      .minimal-frame { aspect-ratio: 4 / 3; }
+      .status { margin-top: 0.75rem; font-size: 12px; color: var(--muted); }
+      .status pre {
+        margin: 0; padding: 0.5rem 0.75rem; background: var(--code-bg);
+        border: 1px solid var(--border); border-radius: 4px;
+        font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        font-size: 11px; max-height: 8rem; overflow: auto;
+        white-space: pre-wrap; word-break: break-word;
+      }
+      .placeholder {
+        display: none; padding: 1rem; background: var(--code-bg);
+        border: 1px dashed var(--border); border-radius: 4px;
+        color: var(--muted); text-align: center; font-size: 13px;
+      }
+      footer { margin-top: 2rem; color: var(--muted); font-size: 12px; text-align: center; }
+    </style>
+    <script type="module" src="./zed-player.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Zed Player — Embed Smoke Test</h1>
+      <p>Three <code>&lt;zed-player&gt;</code> instances on one static page. No bundler, no framework — just a single ES module load.</p>
+    </header>
+
+    <section id="section-a">
+      <h2>A. Hero mode</h2>
+      <p>Autoplays muted, loops, no UI chrome. Full-width 16:9. The bundle is fetched the first time the element scrolls into view; scrolling away pauses the engine.</p>
+      <pre><code>&lt;zed-player mode="hero" autoplay muted loop src="demo.zedp"&gt;&lt;/zed-player&gt;</code></pre>
+      <zed-player class="hero-frame" mode="hero" autoplay muted loop src="../demos/logo-demo.zedp"></zed-player>
+      <div class="placeholder" data-placeholder>Demo bundle not yet uploaded.</div>
+      <div class="status"><pre data-status>idle…</pre></div>
+    </section>
+
+    <section id="section-headless">
+      <h2>A2. Live &amp; interactive, no UI</h2>
+      <p>Use <code>mode="minimal"</code> with <code>autoplay</code> for a shader that runs live the moment it's visible — no toolbar, no controls, just the canvas. Pointer events go through to the shader, so it stays interactive. Add <code>muted</code> when the demo has audio (browser autoplay policy requires muted for headless start).</p>
+      <pre><code>&lt;zed-player mode="minimal" autoplay loop muted src="demo.zedp"&gt;&lt;/zed-player&gt;</code></pre>
+      <zed-player class="minimal-frame" mode="minimal" autoplay loop muted src="../demos/globe-model.zedp"></zed-player>
+      <div class="placeholder" data-placeholder>Demo bundle not yet uploaded.</div>
+      <div class="status"><pre data-status>idle…</pre></div>
+    </section>
+
+    <section id="section-b">
+      <h2>B. Interactive widget</h2>
+      <p>Minimal canvas with a sibling controls panel. Sliders update the shader live.</p>
+      <zed-player id="demo1" class="minimal-frame" mode="minimal" src="../demos/zed-pbr-logo.zedp"></zed-player>
+      <zed-player-controls for="demo1"></zed-player-controls>
+      <div class="placeholder" data-placeholder>Demo bundle not yet uploaded.</div>
+      <div class="status"><pre data-status>idle…</pre></div>
+    </section>
+
+    <section id="section-c">
+      <h2>C. Full player</h2>
+      <p>Classic toolbar with transport, mute, fullscreen — the same surface used by <code>/player/</code>.</p>
+      <zed-player class="full-frame" mode="full" src="../demos/audio-demo.zedp"></zed-player>
+      <div class="placeholder" data-placeholder>Demo bundle not yet uploaded.</div>
+      <div class="status"><pre data-status>idle…</pre></div>
+    </section>
+
+    <footer>Loaded from <code>./zed-player.js</code>. Bundles live in <code>../demos/</code>.</footer>
+
+    <script>
+      // Event names are kebab-case ('zed-load', 'zed-error') — use them
+      // verbatim with addEventListener, NOT camelCase.
+      (function () {
+        document.querySelectorAll('section').forEach(function (section) {
+          var player = section.querySelector('zed-player');
+          var statusEl = section.querySelector('[data-status]');
+          var placeholder = section.querySelector('[data-placeholder]');
+          if (!player || !statusEl) return;
+
+          function write(label, payload) {
+            var ts = new Date().toLocaleTimeString();
+            var body = '';
+            try { body = payload ? JSON.stringify(payload, null, 2) : ''; }
+            catch (e) { body = String(payload); }
+            statusEl.textContent = '[' + ts + '] ' + label + (body ? '\n' + body : '');
+          }
+
+          player.addEventListener('zed-load', function (ev) {
+            var d = (ev && ev.detail) || {};
+            write('zed-load', d.manifest
+              ? { title: d.manifest.title, description: d.manifest.description, controls: (d.controls || []).length }
+              : {});
+          });
+          player.addEventListener('zed-error', function (ev) {
+            var detail = (ev && ev.detail) || {};
+            write('zed-error: ' + (detail.message || 'unknown'), detail);
+            if (placeholder && /404|fetch|not found/i.test(detail.message || '')) {
+              placeholder.style.display = 'block';
+              player.style.display = 'none';
+            }
+          });
+          player.addEventListener('zed-play', function () { write('zed-play'); });
+          player.addEventListener('zed-pause', function () { write('zed-pause'); });
+
+          // Belt-and-suspenders fallback if the embed module itself failed to load.
+          fetch(player.getAttribute('src'), { method: 'HEAD' }).then(function (r) {
+            if (!r.ok && placeholder) {
+              placeholder.style.display = 'block';
+              player.style.display = 'none';
+              write('bundle missing (HTTP ' + r.status + ')');
+            }
+          }).catch(function () { /* network errors handled by zed-error */ });
+        });
+      })();
+    </script>
+  </body>
+</html>

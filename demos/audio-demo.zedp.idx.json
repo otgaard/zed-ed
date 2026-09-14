@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "wrap": 2,
+  "bundleHash": "e118dc937160de07",
+  "text": {
+    "offset": 36,
+    "length": 3801,
+    "hash": "d4176865397bf796"
+  },
+  "assets": [
+    {
+      "path": "audio/test.mp3",
+      "offset": 3881,
+      "length": 971109,
+      "hash": "850141b13a700fce",
+      "mime": "audio/mpeg"
+    },
+    {
+      "path": "snapshots/snap-1.webp",
+      "offset": 975041,
+      "length": 28912,
+      "hash": "c33e4b0050f84615",
+      "mime": "image/webp"
+    }
+  ]
+}

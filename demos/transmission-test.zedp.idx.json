@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "wrap": 2,
+  "bundleHash": "a6392eaf05421d00",
+  "text": {
+    "offset": 36,
+    "length": 5101,
+    "hash": "5d42970fba8a65e9"
+  },
+  "assets": [
+    {
+      "path": "gltf-models/WaterBottle.glb/model.bin",
+      "offset": 5204,
+      "length": 8961340,
+      "hash": "074341e0c9b99124"
+    },
+    {
+      "path": "gltf-models/TransmissionSuzanne.gltf/model.bin",
+      "offset": 8966620,
+      "length": 3937,
+      "hash": "f6526a1a5ee2f8f3"
+    },
+    {
+      "path": "gltf-models/TransmissionSuzanne.gltf/externals/TransmissionSuzanne.bin",
+      "offset": 8970657,
+      "length": 468480,
+      "hash": "aab742cee2ec8e71"
+    },
+    {
+      "path": "gltf-models/TransmissionSuzanne.gltf/externals/ThicknessMap.png",
+      "offset": 9439230,
+      "length": 153733,
+      "hash": "74936fef1b4ba04b",
+      "mime": "image/png"
+    },
+    {
+      "path": "textures/venice_sunset_2k.hdr",
+      "offset": 9593022,
+      "length": 5723224,
+      "hash": "cbfac020ee17ab36"
+    },
+    {
+      "path": "textures/__envmap_n_ft7kl_irradiance.zcm",
+      "offset": 15316316,
+      "length": 42386,
+      "hash": "f9db14114810f38f",
+      "mime": "application/x-zed-zcm"
+    },
+    {
+      "path": "textures/__envmap_n_ft7kl_prefiltered.zcm",
+      "offset": 15358773,
+      "length": 809339,
+      "hash": "54d338db23c668b3",
+      "mime": "application/x-zed-zcm"
+    },
+    {
+      "path": "textures/__envmap_n_ft7kl_brdf.png",
+      "offset": 16168176,
+      "length": 113496,
+      "hash": "304e01677ef48b15",
+      "mime": "image/png"
+    },
+    {
+      "path": "snapshots/snap-1.webp",
+      "offset": 16281723,
+      "length": 15944,
+      "hash": "ea244a65ae0d0cd0",
+      "mime": "image/webp"
+    }
+  ]
+}
